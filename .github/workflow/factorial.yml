@@ -1,0 +1,21 @@
+name: Calculating Factorial
+
+on:
+  workflow_dispatch:
+    inputs:
+      number:
+        description: 'Number to calculate factorial'
+        required: true
+        type: string
+
+jobs:
+  run-factorial-script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Run the factorial script
+      run: |
+        chmod +x ./factorial.sh
+        ./factorial.sh ${{ github.event.inputs.number }}
