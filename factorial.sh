@@ -13,7 +13,7 @@ factorial=1
 
 for ((i = 1; i <= $number; i++))
 do
-  factorial=$((factorial * i))
+  result=$((factorial * i))
 done
 
-echo "The factorial of $number is: $factorial"
+echo "The factorial of $number is: $result"
