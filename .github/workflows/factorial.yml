@@ -6,7 +6,6 @@ on:
       number:
         description: 'Number to calculate factorial'
         required: true
-        type: string
 
 jobs:
   run-factorial-script:
