@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       number:
-        description: 'Number to calculate factorial'
+        description: 'Input a number to calculate factorial'
         required: true
 
 jobs:
